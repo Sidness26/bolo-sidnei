@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sidnei Bolos — Confeitaria artesanal em Santana-AP. Bolos de festa, caseiros, tortas gourmet e fatias especiais feitos com carinho.">
+  <title>Sidnei Bolos | Tradição e Sabor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">Sidnei Bolos</a>
+
+      <button class="header__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#about" class="header__link header__link--active">Sobre</a>
+        <a href="#festa" class="header__link">Bolos de Festa</a>
+        <a href="#depoimentos" class="header__link">Depoimentos</a>
+        <a href="#contato" class="header__link header__link--mobile-only">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#contato" class="header__contact">Contato</a>
+        <a href="https://wa.me/5596991801214" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Encomendar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="label-caps">Desde 2014 • Santana-AP</span>
+          <h1 class="display-lg">Tradição em cada pedaço, carinho em cada detalhe.</h1>
+          <p class="body-lg hero__text">Bolos artesanais feitos com afeto em Santana-AP. Sabores que contam histórias e celebram os seus melhores momentos.</p>
+          <div class="hero__actions">
+            <a href="https://wa.me/5596991801214" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
+              Encomendar pelo WhatsApp
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn--outline">Nossa História</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+          <div class="vintage-frame">
+            <video
+              class="hero__video"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="src/assets/bolo%20chocolate.png"
+              aria-label="Vídeo de bolos artesanais decorados"
+            >
+              <source src="src/assets/Ideias%20Incr%C3%ADveis%20para%20Fazer%20seus%20Bolos%20Decorados%20para%20Festas%20e%20Eventos%20_%20Cakes%20Compilation.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="hero__deco hero__deco--bl" aria-hidden="true"></div>
+          <div class="hero__deco hero__deco--tr" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--about" id="about">
+      <div class="container">
+        <div class="art-deco-divider" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <div class="about__content reveal">
+          <h2 class="headline-md">O Segredo da Sidnei Bolos</h2>
+          <p class="body-lg">Nascemos do desejo de transformar ingredientes simples em memórias inesquecíveis. Cada bolo que sai da nossa cozinha carrega consigo décadas de receitas familiares aprimoradas com técnicas modernas da alta confeitaria.</p>
+          <p class="body-md about__quote">"Não vendemos apenas bolos; entregamos o centro das atenções da sua celebração, envolto em camadas de afeto e finalizado com a perfeição que sua festa merece."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="section section--showcase" id="vitrine">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <span class="label-caps label-caps--secondary">Nossa Vitrine</span>
+            <h2 class="headline-md">Escolha sua Celebração</h2>
+          </div>
+          <a href="https://wa.me/5596991801214?text=Ol%C3%A1!%20Gostaria%20de%20ver%20o%20card%C3%A1pio%20completo." class="section-header__link" target="_blank" rel="noopener noreferrer">
+            Ver cardápio completo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" id="festa">
+            <div class="product-card__image">
+              <img src="src/assets/bolo%20chocolate.png" alt="Bolo de festa de chocolate com decoração elegante" loading="lazy">
+              <div class="product-card__overlay">
+                <span class="product-card__tag">Detalhes</span>
+              </div>
+            </div>
+            <h3 class="headline-sm">Bolos de Festa</h3>
+            <p class="body-md">Design exclusivo para grandes momentos.</p>
+          </article>
+
+          <article class="product-card reveal reveal--delay" id="caseiros">
+            <div class="product-card__image">
+              <img src="src/assets/bolo%20banana%20canela.png" alt="Bolo caseiro de banana com canela" loading="lazy">
+              <div class="product-card__overlay">
+                <span class="product-card__tag">Detalhes</span>
+              </div>
+            </div>
+            <h3 class="headline-sm">Caseiros</h3>
+            <p class="body-md">O sabor do café da tarde da vovó.</p>
+          </article>
+
+          <article class="product-card reveal reveal--delay-2" id="tortas">
+            <div class="product-card__image">
+              <img src="src/assets/bolo%20maracuja.png" alt="Torta gourmet de maracujá com frutas frescas" loading="lazy">
+              <div class="product-card__overlay">
+                <span class="product-card__tag">Detalhes</span>
+              </div>
+            </div>
+            <h3 class="headline-sm">Tortas Gourmet</h3>
+            <p class="body-md">Frutas frescas e texturas cremosas.</p>
+          </article>
+
+          <article class="product-card reveal reveal--delay-3" id="fatias">
+            <div class="product-card__image">
+              <img src="src/assets/bolo%20uva.png" alt="Fatia especial de bolo de uva" loading="lazy">
+              <div class="product-card__overlay">
+                <span class="product-card__tag">Detalhes</span>
+              </div>
+            </div>
+            <h3 class="headline-sm">Fatias Especiais</h3>
+            <p class="body-md">Uma porção individual de felicidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="section section--gallery" id="galeria">
+      <div class="container">
+        <div class="gallery__header reveal">
+          <span class="label-caps label-caps--secondary">Portfólio</span>
+          <h2 class="headline-md">Nossas Criações</h2>
+          <p class="body-md">Cada receita é uma obra de arte feita à mão, com ingredientes selecionados e acabamento impecável.</p>
+        </div>
+
+        <div class="gallery-masonry reveal">
+          <figure class="gallery-item gallery-item--tall">
+            <img src="src/assets/bolo%20abacaxi.png" alt="Bolo artesanal de abacaxi com cobertura dourada" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="src/assets/bolo%20laranja.png" alt="Bolo de laranja com glacê artesanal" loading="lazy">
+          </figure>
+          <figure class="gallery-item gallery-item--wide">
+            <img src="src/assets/bolo%20cupu.png" alt="Bolo regional de cupuaçu com decoração tropical" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="src/assets/bolo%20maracuja.png" alt="Bolo de maracujá com frutas frescas" loading="lazy">
+          </figure>
+          <figure class="gallery-item gallery-item--tall">
+            <img src="src/assets/bolo%20chocolate.png" alt="Bolo de chocolate premium para festas" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="src/assets/bolo%20banana%20canela.png" alt="Bolo caseiro de banana com canela" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="src/assets/bolo%20uva.png" alt="Bolo de uva com chantilly artesanal" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="section section--video" id="processo">
+      <div class="container">
+        <div class="video-block reveal">
+          <div class="vintage-frame vintage-frame--video">
+            <div class="video-player" id="videoPlayer">
+              <video
+                id="processVideo"
+                class="video-player__media"
+                poster="src/assets/bolo%20abacaxi.png"
+                preload="metadata"
+                aria-label="Vídeo do processo artesanal de confeitaria"
+              >
+                <source src="src/assets/Ideias%20Incr%C3%ADveis%20para%20Fazer%20seus%20Bolos%20Decorados%20para%20Festas%20e%20Eventos%20_%20Cakes%20Compilation.mp4" type="video/mp4">
+              </video>
+              <button class="video-player__play" id="videoPlayBtn" aria-label="Reproduzir vídeo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-block__caption">
+            <h3 class="headline-sm headline-sm--accent">Assista à Magia Acontecer</h3>
+            <p class="body-md">Conheça o processo artesanal por trás de cada pedido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--testimonials" id="depoimentos">
+      <div class="container">
+        <div class="testimonials__header reveal">
+          <span class="label-caps label-caps--secondary">Nossos Clientes</span>
+          <h2 class="headline-md">O que dizem nossos clientes</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <svg class="testimonial-card__quote" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+            </div>
+            <p class="testimonial-card__text">"O bolo do aniversário da minha filha foi o ponto alto da festa. Além de lindíssimo, a massa estava incrivelmente úmida e o recheio no ponto certo."</p>
+            <p class="testimonial-card__author">— Maria Alice, Santana-AP</p>
+          </article>
+
+          <article class="testimonial-card reveal reveal--delay">
+            <svg class="testimonial-card__quote" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+            </div>
+            <p class="testimonial-card__text">"Os bolos caseiros me lembram minha infância. É raro encontrar algo tão artesanal e bem feito hoje em dia. Recomendo de olhos fechados!"</p>
+            <p class="testimonial-card__author">— João Pedro, Macapá-AP</p>
+          </article>
+
+          <article class="testimonial-card reveal reveal--delay-2">
+            <svg class="testimonial-card__quote" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+            </div>
+            <p class="testimonial-card__text">"As tortas são simplesmente de outro mundo. A apresentação é impecável e o sabor é sofisticado. O atendimento via WhatsApp é super rápido."</p>
+            <p class="testimonial-card__author">— Cláudia Mendes, Santana-AP</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">Sidnei Bolos</div>
+        <p class="body-md">Confeitaria artesanal dedicada a criar momentos doces com elegância e tradição.</p>
+        <a href="https://instagram.com" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <span class="label-caps label-caps--secondary">Navegação</span>
+        <nav class="footer__links">
+          <a href="#contato">Localização: Santana - AP</a>
+          <a href="https://wa.me/5596991801214" target="_blank" rel="noopener noreferrer">WhatsApp: (96) 99180-1214</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#">Termos</a>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <span class="label-caps label-caps--secondary">Horário de Funcionamento</span>
+        <p class="body-md">Segunda a Sábado: 09:00 às 19:00<br>Domingos: 09:00 às 13:00</p>
+        <hr class="footer__divider">
+        <p class="footer__copy">© 2026 Sidnei Bolos. Tradição e Sabor em Santana-AP.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/5596991801214" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.143c1.589.943 3.547 1.441 5.541 1.442 5.421 0 9.835-4.414 9.838-9.835.002-2.628-1.023-5.1-2.885-6.963-1.862-1.862-4.334-2.887-6.962-2.888-5.422 0-9.838 4.415-9.841 9.835-.001 2.108.544 4.166 1.577 5.961l-1.035 3.779 3.867-1.011zm11.453-7.584c-.307-.154-1.817-.897-2.098-.998-.282-.102-.487-.154-.692.154-.205.308-.795.998-.974 1.203-.179.206-.359.231-.666.077-.307-.154-1.298-.478-2.472-1.526-.913-.815-1.53-1.821-1.71-2.129-.179-.308-.019-.475.134-.629.138-.138.307-.359.461-.539.154-.179.205-.308.307-.513.102-.205.051-.385-.026-.539-.077-.154-.692-1.667-.948-2.283-.25-.6-.523-.519-.718-.529l-.615-.011c-.205 0-.539.077-.82.385-.282.308-1.077 1.051-1.077 2.565 0 1.513 1.103 2.975 1.256 3.18.154.205 2.171 3.315 5.258 4.646.735.316 1.309.505 1.757.646.737.234 1.408.201 1.94.121.594-.089 1.817-.743 2.073-1.462.256-.718.256-1.334.179-1.462-.077-.128-.282-.205-.59-.359z"/></svg>
+    <span class="whatsapp-fab__tooltip">Fale Conosco</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
